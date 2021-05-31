@@ -1,16 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="board.BoardDAO"%>
-<!-- userdao의 클래스 가져옴 -->
 <%@ page import="board.Board"%>
 <%@ page import="java.io.PrintWriter"%>
-<!-- 자바 클래스 사용 -->
 <% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>jsp 게시판 웹사이트</title>
+<title>건강한 사람들</title>
 </head>
 <body>
 	<% 

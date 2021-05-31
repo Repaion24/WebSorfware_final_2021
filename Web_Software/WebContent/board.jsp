@@ -11,16 +11,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<!-- 뷰포트 -->
-
 <meta name="viewport" content="width=device-width" initial-scale="1">
-
-<!-- 스타일시트 참조 -->
-
 <link rel="stylesheet" href="css/bootstrap.css">
 
-<title>제목을 입력해야합니다</title>
+<title>건강한 사람들</title>
 
 </head>
 <body> 
@@ -35,7 +29,7 @@ if(request.getParameter("pageNumber")!=null){
 }
 
 %>
-<!-- 네비게이션 -->
+
 <nav class="navbar navbar-default">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1" aria-expaned="false">
@@ -43,11 +37,11 @@ if(request.getParameter("pageNumber")!=null){
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="main.jsp">우리 사이트 이름</a>
+<a class="navbar-brand" href="main.jsp">건강한 사람들</a>
 </div>
 <div class="collapse navbar-collapse" id="#bs-example-navbar-collapse-1">
 <ul class="nav navbar-nav">
-<li><a href="main.jsp">메인</a></li>
+<li><a href="main.jsp">MAIN</a></li>
 <li class="active"><a href="board.jsp">게시판</a></li>
 </ul> 
 <%
@@ -86,7 +80,6 @@ if (userID == null) {
  %>
  </div>
  </nav>
- <!-- 게시판 --> 
  <div class="container"> 
  <div class = "row"> 
  <table class="table table-striped" style="text-align:center; border:1px solid #dddddd"> 
@@ -142,10 +135,8 @@ if (userID == null) {
   
   
   
-  <!-- 애니매이션 담당 JQUERY -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js">
   </script>
-   <!-- 부트스트랩 JS -->
    <script src="js/bootstrap.js"></script>
    </body>
    </html>

@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="board.BoardDAO" %>
-<%@ page import="java.io.PrintWriter" %> 
-<!-- 자바 클래스 사용 --> 
-<% request.setCharacterEncoding("UTF-8"); %> 
-<!-- 회원정보를 담는 user클래스를 javabeans 사용--> 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="board.BoardDAO"%>
+<%@ page import="java.io.PrintWriter"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <jsp:useBean id="board" class="board.Board" scope="page" />
 <jsp:setProperty name="board" property="boardTitle" />
 <jsp:setProperty name="board" property="boardContent" />
@@ -13,10 +12,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>jsp 게시판 웹사이트</title>
+<title>건강한 사람들</title>
 </head>
 <body>
-<%
+	<%
 String userID = null;
 if(session.getAttribute("userID") != null){
 	userID = (String) session.getAttribute("userID"); 
@@ -36,7 +35,6 @@ if(userID == null){
 		script.println("</script>");
 	} else{
 		BoardDAO boardDAO = new BoardDAO();
-		//인스턴스생성
 		int result = boardDAO.write(board.getBoardTitle(), userID, board.getBoardContent());
 		if(result == -1){
 			PrintWriter script = response.getWriter();
@@ -53,7 +51,7 @@ if(userID == null){
 		} 
 	} 
 }
-%> 
-</body> 
-</body> 
+%>
+</body>
+</body>
 </html>

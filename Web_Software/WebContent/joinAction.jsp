@@ -1,10 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="user.UserDAO" %>
-
-<%@ page import="java.io.PrintWriter" %>
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ page import="user.UserDAO"%>
+<%@ page import="java.io.PrintWriter"%>
 <% request.setCharacterEncoding("UTF-8"); %>
-
 <jsp:useBean id="user" class="user.User" scope="page" />
 <jsp:setProperty name="user" property="userID" />
 <jsp:setProperty name="user" property="userPassword" />
@@ -17,13 +15,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-<title></title>
+<title>건강한 사람들</title>
 
 
 </head>
 
- <body>
- <%
+<body>
+	<%
 	String userID = null;
 
 	if(session.getAttribute("userID") != null){
@@ -37,7 +35,7 @@
 		script.println("</script>");
 	}
 %>
-  <% 
+	<% 
   if (user.getUserID() == null 
   || user.getUserPassword() == null 
   || user.getUserName() == null 
@@ -50,16 +48,14 @@
 	  script.println("</script>");
   } else{
 	  UserDAO userDAO = new UserDAO();
-	  //인스턴스생성
 	  int result = userDAO.join(user);
 	  if(result == -1){
-		  // 아이디가 기본키기. 중복되면 오류.
 		  PrintWriter script = response.getWriter();
 		  script.println("<script>");
 		  script.println("alert('이미 존재하는 아이디 입니다.')");
 		  script.println("history.back()");
 		  script.println("</script>"); 
-	  } //가입성공
+	  }
 	  else {
 		  session.setAttribute("userID",user.getUserID());
 		  PrintWriter script = response.getWriter();
