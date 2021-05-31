@@ -8,7 +8,7 @@
      <meta name ="viewport" content = "width = device-width", initial-scale="1">
       <!-- 스타일시트-->
        <link rel="stylesheet" href="css/bootstrap.css">
-        <title>Alisyabob의 게시판</title>
+        <title>제목을 입력해야합니다</title>
          </head>
           <body>
            <!-- 네비게이션--> 
@@ -19,12 +19,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
              </button>
-             <a class="navbar-brand" href="main.jsp">JSP 게시판</a>
+             <a class="navbar-brand" href="main.jsp">우리 사이트 이름</a>
              </div>
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
               <li><a href="main.jsp">메인</a></li>
-              <li><a href="bbs.jsp">게시판</a></li>
+              <li><a href="board.jsp">게시판</a></li>
               </ul> 
               <ul class="nav navbar-nav navbar-right">
                <li class="dropdown">
@@ -38,7 +38,7 @@
                 </a>
                 </li>
                 <li >
-                <a href="login.jsp">회원가입</a>
+                <a href="join.jsp">회원가입</a>
                 </li>
                 </ul>
                 </li>
