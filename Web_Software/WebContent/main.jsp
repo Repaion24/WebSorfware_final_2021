@@ -102,7 +102,7 @@
             <div class="carousel-caption">
               <h1>건강한 사람들</h1>
               <p>그냥 먹어도 좋지만 알고 먹으면 더 좋습니다</p>
-              <p><a class="btn btn-lg btn-warning" href="board.jsp" role="button">건강음식 알아보기</a></p>
+              <p><a class="btn btn-lg btn-warning" href="product.jsp" role="button">건강음식 알아보기</a></p>
             </div>
           </div>
         </div>
@@ -186,13 +186,17 @@
       <hr class="featurette-divider">
 
 
+
+
+	<hr class="featurette-divider">
+	
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>2021 OpenSource_Web, Team_2.</p>
       </footer>
 
 
-
+	</div>
 
 
 

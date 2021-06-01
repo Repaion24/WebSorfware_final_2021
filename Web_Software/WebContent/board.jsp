@@ -139,10 +139,16 @@ if(request.getParameter("pageNumber")!=null){
   </div>
   </div>
   
+  <div class="container marketing">
   
+  <hr class="featurette-divider">
   
+  <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>2021 OpenSource_Web, Team_2.</p>
+    </footer>
   
-  
+  </div>
   
   <script src="https://code.jquery.com/jquery-3.1.1.min.js">
   </script>

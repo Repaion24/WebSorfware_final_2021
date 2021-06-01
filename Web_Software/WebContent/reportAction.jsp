@@ -35,7 +35,7 @@ if(boardID==0){
 	script.println("</script>"); 
 }
 Board board = new BoardDAO().getBoard(boardID);
-	BoardDAO boardDAO = new BoardDAO();
+BoardDAO boardDAO = new BoardDAO();
 	int result = boardDAO.report(boardID, board.getBoardBad()+1);
 	if(result == -1){
 		PrintWriter script = response.getWriter();
@@ -45,11 +45,11 @@ Board board = new BoardDAO().getBoard(boardID);
 		script.println("</script>"); 
 	}
 	else {
-		if(board.getBoardBad() > 3){
+		if(board.getBoardBad() > 2){
 			boardDAO.delete(boardID);
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
-			script.println("alert('글이 세번 이상 신고되어 삭제됩니다')");
+			script.println("alert('글이 네번 이상 신고되어 삭제됩니다')");
 			script.println("location.href = 'board.jsp'");
 			script.println("</script>"); 
 		}

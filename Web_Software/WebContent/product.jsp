@@ -11,20 +11,16 @@
 <link rel="stylesheet" href="css/bootstrap.css">
 
 <body>
-
 	<%
-		String userID = null;
-		if (session.getAttribute("userID") != null) {
-			userID = (String) session.getAttribute("userID");
+		String userID = null;		// 기본적으로 UserID는 NULL임 (로그인 하지 않은 상태)
+		if (session.getAttribute("userID") != null) {		//여기서 로그인 했는지 확인하고
+			userID = (String) session.getAttribute("userID");	//userID라는 변수에다가 로그인 되어있다면 유저정보를 넣어줌
 		}
 	%>
-
 	<div class="navbar wrapper">
 		<div class="container">
-	
 	<nav class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
-	
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="bs-example-navbar-collapse-1"
@@ -76,12 +72,50 @@
 			</nav>
 		</div>
 	</div>
+	
+	<%
+		//여기까지가 Navbar고 나머지 상품 소개 및 부작용, 구매버튼, 효과등등을 적어주세요  (nav바 건들지 말것)
+	%>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
-
-
-
+	  <div class="container marketing">
+  
+  <hr class="featurette-divider">
+  
+  <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>2021 OpenSource_Web, Team_2.</p>
+    </footer>
+  
+  </div>
 
 
 
