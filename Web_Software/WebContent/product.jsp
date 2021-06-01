@@ -3,12 +3,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width = device-width" , initial-scale="1">
-<link rel="stylesheet" href="css/bootstrap.css">
+<meta charset="UTF-8">
 <title>건강한 사람들</title>
 </head>
+
+
+<link rel="stylesheet" href="css/bootstrap.css">
+
 <body>
+
+	<%
+		String userID = null;
+		if (session.getAttribute("userID") != null) {
+			userID = (String) session.getAttribute("userID");
+		}
+	%>
+
 	<div class="navbar wrapper">
 		<div class="container">
 	
@@ -29,8 +39,11 @@
 			<ul class="nav navbar-nav">
 				<li><a href="main.jsp">MAIN</a></li>
 				<li><a href="board.jsp">게시판</a></li>
-				<li><a href="product.jsp">건강식품</a></li>
+				<li class="active"><a href="product.jsp">건강식품</a></li>
 			</ul>
+			<%
+				if (userID == null) {
+			%>
 			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -41,36 +54,41 @@
 						<li><a href="join.jsp">회원가입</a></li>
 					</ul></li>
 			</ul>
+			
+			<%
+				} else {
+			%>
+			<ul class="nav navbar-nav navbar-left">
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false"> 회원관리 <span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="logoutAction.jsp">로그아웃</a></li>
+					</ul></li>
+			</ul>
+			<%
+				}
+			%>
 			</div>
 			
 			</div>
 			</nav>
 		</div>
 	</div>
-	<div class="container">
-		<div class="col-lg-4"></div>
-		<div class="col-lg-4">
-			<div class="jumbotron" style="padding-top: 20px;">
-				<form method="post" action="loginAction.jsp">
-					<h3 style="text-align: center;">LOG IN</h3>
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="아이디"
-							name="userID" maxlength="20">
-					</div>
-					<div class="form-group">
-						<input type="password" class="form-control" placeholder="비밀번호"
-							name="userPassword" maxlength="20">
-					</div>
-					<input type="submit" class="btn btn-primary form-control"
-						value="LOG IN">
-				</form>
-			</div>
-		</div>
-		<div class="col-lg-4"></div>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
-                           </script>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js">
-                            </script>
+	 </script>
 </body>
 </html>

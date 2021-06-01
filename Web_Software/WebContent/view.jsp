@@ -37,7 +37,12 @@
 
 
 
-	<nav class="navbar navbar-default">
+	<div class="navbar wrapper">
+		<div class="container">
+	
+	<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+	
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed"
 				data-toggle="collapse" data-target="bs-example-navbar-collapse-1"
@@ -51,25 +56,27 @@
 			id="#bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li><a href="main.jsp">MAIN</a></li>
-				<li class="active"><a href="board.jsp">게시판</a></li>
+				<li class = "active"><a href="board.jsp">게시판</a></li>
+				<li><a href="product.jsp">건강식품</a></li>
 			</ul>
 			<%
 				if (userID == null) {
 			%>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false"> 접속하기 <span class="caret"></span>
+					aria-expanded="false"> Contect <span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="login.jsp">로그인</a></li>
 						<li><a href="join.jsp">회원가입</a></li>
 					</ul></li>
 			</ul>
+			
 			<%
 				} else {
 			%>
-			<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
 					aria-expanded="false"> 회원관리 <span class="caret"></span>
@@ -81,8 +88,12 @@
 			<%
 				}
 			%>
+			</div>
+			
+			</div>
+			</nav>
 		</div>
-	</nav>
+	</div>
 
 
 	<div class="container">
@@ -110,12 +121,19 @@
 						<td colspan="2"><%= board.getBoardDate().substring(0,11)+board.getBoardDate().substring(11,13)+ "시" + board.getBoardDate().substring(14,16)+"분" %></td>
 					</tr>
 					<tr>
+						<td>게시물 신고 횟수</td>
+						<td colspan="2"><%= board.getBoardBad() %></td>
+					</tr>
+					<tr>
 						<td>본문</td>
 						<td colspan="2" style="min-height: 200px; text-align: left;"><%= board.getBoardContent().replaceAll(" ", "&nbsp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\n", "<br>") %></td>
 					</tr>
 				</tbody>
 			</table>
 			<a href="board.jsp" class="btn btn-primary">목록</a>
+			<a href="reportAction.jsp?boardID=<%= boardID %>"
+				class="btn btn-danger">신고</a>
+				
 			<%
 				if(userID != null && userID.equals(board.getUserID())){
 			%>
@@ -125,8 +143,6 @@
 			<%
 				}
 			%>
-
-			</form>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

@@ -103,7 +103,6 @@ public class BoardDAO {
 	} 
 	
 	public boolean nextPage (int pageNumber) {
-		//게시글이 10개 일 경우 10단위로 끊기는 경우 다음페이지 안나오게
 		String SQL = "SELECT * FROM BOARD WHERE BOARDID < ? AND BOARDAvailable = 1 ";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
@@ -131,7 +130,7 @@ public class BoardDAO {
 				board.setBoardDate(rs.getString(4));
 				board.setBoardContent(rs.getString(5));
 				board.setBoardAvailable(rs.getInt(6));
-				board.setBoardAvailable(rs.getInt(7));
+				board.setBoardBad(rs.getInt(7));
 				return board; 
 			} 
 		}catch (Exception e) {
@@ -154,11 +153,27 @@ public class BoardDAO {
 		return -1; 
 	}
 	
+	
 	public int delete(int boardID) {
 		String SQL = "UPDATE BOARD SET boardAvailable = 0 WHERE boardID = ?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);;
 			pstmt.setInt(1, boardID);
+			return pstmt.executeUpdate();
+		} catch(Exception e) {
+			e.printStackTrace(); 
+		}
+		return -1; 
+	}
+	
+
+	
+	public int report(int boardID, int boardBad) {
+		String SQL = "UPDATE BOARD SET boardBad = ? WHERE boardID = ?";
+		try {
+			PreparedStatement pstmt = conn.prepareStatement(SQL);;
+			pstmt.setInt(1, boardBad);
+			pstmt.setInt(2, boardID);
 			return pstmt.executeUpdate();
 		} catch(Exception e) {
 			e.printStackTrace(); 
