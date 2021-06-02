@@ -48,7 +48,7 @@
 			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown" role="button" aria-haspopup="true"
-					aria-expanded="false"> Contect <span class="caret"></span>
+					aria-expanded="false"> Contact <span class="caret"></span>
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="login.jsp">로그인</a></li>
@@ -150,9 +150,15 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">건강식품 소개 <span class="text-muted">Introduction to Healthy Foods</span></h2>
-          <p class="lead">여기 설명좀 추가해줘</p>
+        <div  class="col-md-7">
+          <h2 style = "font-weight:bold" class="featurette-heading">건강식품 소개 <span style = "font-size:0.8em" class="text-muted"><br>Introduction to Healthy Foods</span></h2>
+          <div style="border:1px solid black ; border-radius : 5px; padding: 10px">
+          <p style = " font-weight:bold; display:inline-block" class="lead"><br>평소 골고루 잘 챙겨 먹었지만 </p>
+          <p style = "font-size:25px;font-weight:bold; color:lime; display:inline-block"> 정확한 효능</p>
+          <p style = "font-weight:bold; display:inline-block"class="lead">은 알고 계셨나요?<br></p>
+           <p style = "font-weight:bold" class="lead">"건강한 사람들"에서는 도움이 되는 건강식품을 소개해 드립니다!<br></p>
+           <p style = "font-weight:bold" class="lead">원하는 건강식품 정보를 검색하고 확인해 보세요!</p>
+           </div>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" src="img/herbal-tea-1410565_1280.jpg" alt="Generic placeholder image">
@@ -162,9 +168,14 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">건강식품 장단점 정보 제공<span class="text-muted"><br />Providing information of healthy foods pros and cons</span></h2>
-          <p class="lead">여기 설명좀 추가해줘</p>
+        <div  class="col-md-7 col-md-push-5">
+          <h2 style = "font-weight:bold" class="featurette-heading">건강식품 장단점 정보 제공<span style = "font-size:0.8em" class="text-muted"><br />Providing information of healthy foods pros and cons</span></h2>
+          <div style="border:1px solid black ; border-radius : 5px; padding: 10px">
+          <p style = "font-weight:bold" class="lead"><br>그저 몸에 좋다고만 해서 구별없이 건강식품을 먹을 순 없죠..</p>
+          <p style = "font-size:25px;font-weight:bold; color:red; display:inline-block" class="lead">혹시 모를 위험을</p> 
+          <p style = "font-weight:bold; display:inline-block" class="lead">예방하기 위해 잘 확인하는게 좋겠죠?</p>
+          <p style = "font-weight:bold" class="lead">"건강한 사람들"은 건강식품의 장점과 단점을 동시에 알려드립니다!</p>
+          </div>
         </div>
         <div class="col-md-5 col-md-pull-7">
           <img class="featurette-image img-responsive center-block" src="img/loverna-journey-5kb0HwTHqTg-unsplash.jpg" alt="Generic placeholder image">
@@ -175,8 +186,15 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">건강식품 정보 커뮤니티 <span class="text-muted"><br />Healthy Foods Information Community</span></h2>
-          <p class="lead">여기 설명좀 추가해줘</p>
+          <h2 style = "font-weight:bold" class="featurette-heading">건강식품 정보 커뮤니티 <span style = "font-size:0.8em" class="text-muted"><br />Healthy Foods Information Community</span></h2>
+          <div style="border:1px solid black ; border-radius : 5px; padding: 10px">
+          <p style = "font-weight:bold" class="lead"><br>건강식품으로 궁금한건 있고.. 어디 물어볼데는 없고...</p>
+          <p style = "font-weight:bold" class="lead">"건강한 사람들"커뮤니티에서 많은 사람들과 대화해보세요!</p>
+          <p style = "font-size:25px; font-weight:bold; color:orange; display:inline-block" class="lead">생생한 후기</p>
+          <p style = "font-weight:bold; display:inline-block" class="lead">를 읽고, </p>
+          <p style = "font-size:25px; font-weight:bold; color:red; display:inline-block" class="lead">잘못 알고 있던 정보</p>
+          <p style = "font-weight:bold; display:inline-block" class="lead">를 바로잡으세요!</p>
+        </div>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" src="img/vegetables-752153_1280.jpg" alt="Generic placeholder image">
