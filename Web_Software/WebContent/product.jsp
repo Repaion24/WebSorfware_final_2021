@@ -72,28 +72,17 @@
 			</nav>
 		</div>
 	</div>
-<div class="tab-menu">
-    <ul class="nav nav-tabs">
-      <li class="nav-item active">
-        <a class="nav-link" data-toggle="tab" href="#tab1" id="#tab1">식재료</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tab2" id="#tab2">음료류</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tab3" id="#tab3">과일과 채소</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tab4" id="#tab4">견과류</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#tab4" id="#tab5">기타 건강식품</a>
-      </li>
+
+    <ul class="nav nav-tabs"id="myTab">
+<li class="active"><a href="#tab1" data-toggle="tab">식재료</a></li>
+    <li><a href="#tab2" data-toggle="tab">음료</a></li>
+    <li><a href="#tab3" data-toggle="tab">과일과 채소</a></li>
+    <li><a href="#tab4" data-toggle="tab">견과류</a></li>
+     <li><a href="#tab5" data-toggle="tab">기타</a></li>
     </ul>
-</div>
-<div class="tab-content">
-    <!-- 본문 -->  
-<div class="tab-pane fade active" id="tab1">
+
+<div class="tab-content"id="myTabContent"> 
+<div class="tab-pane active" id="tab1">
   <div class="product">
 
       <hr class="featurette-divider">
@@ -307,8 +296,8 @@
 </div>
         </div>
 
-  <div class="tab-pane fade" id="tab2">
-  <div class="product">
+ <div class="tab-pane" id="tab2">
+  <div class="product2">
 
       <hr class="featurette-divider">
 
@@ -422,8 +411,8 @@
       </div>
 
 </div></div>
-  <div class="tab-pane fade" id="tab3">
-  <div class="product">
+   <div class="tab-pane" id="tab3" >
+  <div class="product3">
 
       <hr class="featurette-divider">
 
@@ -538,8 +527,8 @@
 
 
 </div></div>
-<div class="tab-pane fade" id="tab4">
- <div class="product">
+ <div class="tab-pane" id="tab4" >
+ <div class="product4">
 
       <hr class="featurette-divider">
 
@@ -611,18 +600,10 @@
       </div>
        <hr class="featurette-divider">
 </div>
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm1">
-    <div class="modal-content">
-    <br>
-    구매완료
-    <br>
-    </div>
-  </div>
-</div>
+
       </div>
-      <div class="tab-pane fade" id="tab5">
- <div class="product">
+      <div class="tab-pane" id="tab5" >
+ <div class="product5">
 
       <hr class="featurette-divider">
 
@@ -710,6 +691,10 @@
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">구매하기</button>
       </div>
 </div>
+</div>
+
+      </div>
+
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm1">
     <div class="modal-content">
@@ -719,9 +704,6 @@
     </div>
   </div>
 </div>
-      </div>
-</div>
-
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js">
