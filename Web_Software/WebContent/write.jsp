@@ -41,7 +41,17 @@
 			<ul class="nav navbar-nav">
 				<li><a href="main.jsp">MAIN</a></li>
 				<li class = "active"><a href="board.jsp">게시판</a></li>
-				<li><a href="product.jsp">건강식품</a></li>
+						<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false"> 건강식품 <span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="product1.jsp">식재료</a></li>
+						<li><a href="product2.jsp">음료</a></li>
+						<li><a href="product3.jsp">과일/채소</a></li>
+						<li><a href="product4.jsp">견과류</a></li>
+						<li><a href="product5.jsp">기타</a></li>
+					</ul></li>
 			</ul>
 			<%
 				if (userID == null) {

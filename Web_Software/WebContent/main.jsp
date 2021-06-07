@@ -21,8 +21,7 @@
 	%>
 
 	<div class="navbar wrapper">
-		<div class="container">
-	
+	<div class="container">
 	<nav class="navbar navbar-inverse navbar-static-top">
 	<div class="container">
 	
@@ -40,7 +39,17 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="main.jsp">MAIN</a></li>
 				<li><a href="board.jsp">게시판</a></li>
-				<li><a href="product.jsp">건강식품</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false"> 건강식품 <span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="product1.jsp">식재료</a></li>
+						<li><a href="product2.jsp">음료</a></li>
+						<li><a href="product3.jsp">과일/채소</a></li>
+						<li><a href="product4.jsp">견과류</a></li>
+						<li><a href="product5.jsp">기타</a></li>
+					</ul></li>
 			</ul>
 			<%
 				if (userID == null) {
@@ -78,6 +87,7 @@
 		</div>
 	</div>
 	
+	<div class="container">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -87,7 +97,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="img/fruit-3661159_1920.jpg" alt="First slide">
+          <img class="first-slide" src="img/fruit-3661159_1920.jpg" alt="First slide" height="700">
           <div class="container">
             <div class="carousel-caption">
               <h1>건강한 사람들</h1>
@@ -97,7 +107,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="img/raspberry-3176371_1920.jpg" alt="Second slide">
+          <img class="second-slide" src="img/raspberry-3176371_1920.jpg" alt="Second slide" height="700">
           <div class="container">
             <div class="carousel-caption">
               <h1>건강한 사람들</h1>
@@ -107,7 +117,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="img/tea-783352_1920.jpg" alt="Third slide">
+          <img class="third-slide" src="img/tea-783352_1920.jpg" alt="Third slide" height="700">
           <div class="container">
             <div class="carousel-caption">
               <h1>건강한 사람들</h1>
@@ -125,6 +135,7 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
     </div>
 	
 	
