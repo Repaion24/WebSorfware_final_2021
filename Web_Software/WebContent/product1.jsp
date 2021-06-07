@@ -592,6 +592,15 @@ padding-left:20px;
 </div>
 </div>
 -->
+
+
+	<hr class="featurette-divider">
+	
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>2021 OpenSource_Web, Team_2.</p>
+      </footer>
+
 </div>	<!-- container div -->
 
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
@@ -615,6 +624,8 @@ padding-left:20px;
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.js">
 	 </script>
+	 
+	 
 </body>
 
 

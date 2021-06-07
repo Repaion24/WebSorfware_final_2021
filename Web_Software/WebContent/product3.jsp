@@ -158,6 +158,19 @@ padding-left:20px;
 
 </div>
 
+
+<div class="container">
+
+<hr class="featurette-divider">
+	
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>2021 OpenSource_Web, Team_2.</p>
+      </footer>
+
+</div>
+
+
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
