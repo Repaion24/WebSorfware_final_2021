@@ -118,7 +118,7 @@ padding-left:20px;
 		for(var i=0;i<4;i++){
 			document.write(`<div class="col-sm-6 col-md-4">`);
 				document.write(`<div class="thumbnail">`);
-					document.write(`<img src="img/smokedduckimg.jpg" alt="Generic placeholder image"  width="300">`);
+					document.write(`<img src="img/`+imgarray[i]+`.jpg" alt="Generic placeholder image"  width="300">`);
 						document.write(`<div class="caption">`);
 						document.write(`<h3>`+food_benefit[i][0]+`</h3>`);
 						document.write(`<table border="1"width="300" >`);
